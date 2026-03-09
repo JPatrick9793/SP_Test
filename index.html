@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Scrambler Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game">
+      <h1>Unscramble the Word</h1>
+      <p class="instructions">Rearrange the letters to form a valid word.</p>
+
+      <section class="card">
+        <p class="label">Scrambled word:</p>
+        <p id="scrambled-word" class="scrambled-word" aria-live="polite">loading...</p>
+
+        <label for="guess" class="label">Your guess:</label>
+        <input id="guess" type="text" autocomplete="off" />
+
+        <div class="buttons">
+          <button id="check-btn">Check</button>
+          <button id="next-btn" class="secondary">Next Word</button>
+        </div>
+
+        <p id="message" class="message" aria-live="polite"></p>
+        <p class="score">Score: <span id="score">0</span></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
